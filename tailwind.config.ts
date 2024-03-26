@@ -1,5 +1,6 @@
 import type { Config } from 'tailwindcss'
 import defaultTheme from 'tailwindcss/defaultTheme'
+import plugin from 'tailwindcss/plugin'
 
 export default <Partial<Config>>{
   theme: {
@@ -21,7 +22,8 @@ export default <Partial<Config>>{
         gray: {
           DEFAULT: '#F3F5FF',
           '1': '#797B88',
-          '2': '#737B98'
+          '2': '#737B98',
+          '3': '#212435'
         }
       },
       fontFamily: {
@@ -31,5 +33,16 @@ export default <Partial<Config>>{
         center: true
       }
     }
-  }
+  },
+  plugins: [
+    plugin(function ({ addUtilities }) {
+      addUtilities({
+        '.content-wrapper': {
+          maxWidth: '1280px',
+          marginLeft: 'auto',
+          marginRight: 'auto'
+        }
+      })
+    })
+  ]
 }
