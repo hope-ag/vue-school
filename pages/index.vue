@@ -1,8 +1,11 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+useSeoMeta({
+  ogImage: '/logo.png'
+})
+</script>
 
 <template>
-  <div>
-    <h1 class="text-primary">Hello</h1>
-    <h2 class="text-secondary">GG</h2>
-  </div>
+  <main>
+    <SectionsHeroSection />
+  </main>
 </template>
