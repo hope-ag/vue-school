@@ -1,9 +1,9 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   devtools: { enabled: true },
-  modules: ["@nuxtjs/tailwindcss", "@nuxtjs/eslint-module"],
+  modules: ['@nuxtjs/tailwindcss', '@nuxtjs/eslint-module'],
   tailwindcss: {
-    configPath: "./tailwind.config.ts",
+    configPath: './tailwind.config.ts'
   },
   eslint: {}
 })
