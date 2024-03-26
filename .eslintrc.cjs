@@ -10,7 +10,13 @@ module.exports = {
     '@vue/eslint-config-prettier'
   ],
   rules: {
-    'vue/multi-word-component-names': 'off'
+    'vue/multi-word-component-names': 'off',
+    'vue/block-order': [
+      'error',
+      {
+        order: ['script', 'template', 'style']
+      }
+    ]
   },
   parserOptions: {
     ecmaVersion: 'latest'
