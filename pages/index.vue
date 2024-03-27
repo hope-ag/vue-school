@@ -6,6 +6,7 @@ useSeoMeta({
 
 <template>
   <main>
-    <SectionsHeroSection />
+    <HeroSection />
+    <AboutSection />
   </main>
 </template>
