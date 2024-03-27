@@ -8,5 +8,6 @@ useSeoMeta({
   <main>
     <HeroSection />
     <AboutSection />
+    <StatsSection />
   </main>
 </template>
