@@ -1,15 +1,15 @@
 <script setup lang="ts"></script>
 
 <template>
-  <header class="min-h-screen">
+  <header class="">
     <LayoutTopNav />
 
     <section class="content-wrapper py-6 px-4">
       <div class="container grid md:grid-cols-2 gap-12 items-center">
         <div
-          class="text space-y-8 max-w-xl flex-col items-center md:items-start text-center md:text-left flex-shrink-0"
+          class="text space-y-8 sm:max-w-md mx-auto md:mx-0 max-w-xl flex-col items-center md:items-start text-center md:text-left flex-shrink-0"
         >
-          <h1 class="font-bold text-4xl sm:text-6xl">
+          <h1 class="text-white font-bold text-4xl sm:text-5xl md:text-6xl">
             Complete <span class="text-primary">Vue.js training</span> solutions for
             companies
           </h1>
@@ -23,7 +23,7 @@
         <NuxtImg
           src="/hero-img.png"
           alt="hero image"
-          class="w-full max-w-90% md:max-w-none flex-shrink-0"
+          class="w-[90%] sm:w-full max-w-96 sm:block mx-auto md:max-w-none md:mx-0 flex-shrink-0"
         />
       </div>
     </section>
