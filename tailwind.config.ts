@@ -10,7 +10,10 @@ export default <Partial<Config>>{
           DEFAULT: '#0BD88F',
           light: '#0CD890'
         },
-        secondary: '#01F0FD',
+        secondary: {
+          DEFAULT: '#01F0FD',
+          light: '#00F0FF'
+        },
         surface: {
           DEFAULT: '#212435',
           light: '#2B2F44'
