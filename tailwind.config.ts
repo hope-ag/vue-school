@@ -35,12 +35,17 @@ export default <Partial<Config>>{
     }
   },
   plugins: [
-    plugin(function ({ addUtilities }) {
+    plugin(function ({ addUtilities, addBase, theme }) {
       addUtilities({
         '.content-wrapper': {
-          maxWidth: '1280px',
+          maxWidth: '1170px',
           marginLeft: 'auto',
           marginRight: 'auto'
+        }
+      })
+      addBase({
+        html: {
+          background: theme('colors.surface.DEFAULT')
         }
       })
     })
