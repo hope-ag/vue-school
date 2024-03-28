@@ -30,7 +30,9 @@ export default <Partial<Config>>{
         }
       },
       fontFamily: {
-        sans: ['Rubik', ...defaultTheme.fontFamily.sans]
+        sans: ['Rubik', ...defaultTheme.fontFamily.sans],
+        inter: ['Inter', ...defaultTheme.fontFamily.sans],
+        'circular-sans': ['"Circular Std"', ...defaultTheme.fontFamily.sans]
       },
       container: {
         center: true
@@ -44,6 +46,13 @@ export default <Partial<Config>>{
           maxWidth: '1170px',
           marginLeft: 'auto',
           marginRight: 'auto'
+        },
+        '.gradient-text': {
+          background: `linear-gradient(90deg, ${theme('colors.primary.DEFAULT')} 0%, ${theme('colors.secondary.light')} 100%)`,
+          backgroundClip: 'text',
+          color: 'transparent',
+          WebkitBackgroundClip: 'text',
+          WebkitTextFillColor: 'transparent'
         }
       })
       addBase({

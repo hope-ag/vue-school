@@ -6,6 +6,7 @@
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
     class="pointer-events-none"
+    preserveAspectRatio="none"
   >
     <path
       d="M4.22001e-05 103C109.812 49.117 272.785 -9.89947 466.199 1.40487C617.902 10.2724 696.033 56.966 831.628 89.4432C979.068 124.762 1149.25 142.79 1440 59.9996V610H0L4.22001e-05 103Z"

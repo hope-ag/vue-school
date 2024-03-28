@@ -9,5 +9,6 @@ useSeoMeta({
     <HeroSection />
     <AboutSection />
     <StatsSection />
+    <PricingSection />
   </main>
 </template>
