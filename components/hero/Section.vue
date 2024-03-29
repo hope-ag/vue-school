@@ -20,11 +20,11 @@
 
           <SharedAppButton label="Get started" class="" />
         </div>
-        <NuxtImg
-          src="/hero-img.png"
-          alt="hero image"
-          class="w-[90%] sm:w-full max-w-96 sm:block mx-auto md:max-w-none md:mx-0 flex-shrink-0"
-        />
+        <ClientOnly>
+          <HeroImage
+            class="w-[90%] sm:w-full max-w-[450px] sm:block mx-auto md:max-w-none md:mx-0 flex-shrink-0"
+          />
+        </ClientOnly>
       </div>
     </section>
   </header>
