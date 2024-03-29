@@ -23,7 +23,7 @@ const workshope = [
     <div class="content-wrapper mb-16">
       <div class="container p-4 flex flex-col">
         <div class="flex justify-center lg:justify-between items-center">
-          <h2 class="text-white font-bold text-5xl md:text-6xl text-center lg:text-left">
+          <h2 class="text-white font-bold h1 text-center lg:text-left">
             Available workshops
           </h2>
           <SharedAppButton label="See all the workshops" class="hidden lg:flex" />

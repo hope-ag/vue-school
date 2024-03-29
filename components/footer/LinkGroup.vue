@@ -19,7 +19,7 @@ defineProps<{
 
     <ul class="text-white space-y-3.5">
       <li v-for="link in links" :key="link.label">
-        <NuxtLink :to="link.href" class="text-white">
+        <NuxtLink :to="link.href" class="text-white hover:text-primary duration-200">
           {{ link.label }}
         </NuxtLink>
       </li>

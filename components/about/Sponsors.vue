@@ -2,7 +2,7 @@
 
 <template>
   <div
-    class="relative hidden lg:flex justify-between items-center content-wrapper py-6 px-4 mt-6"
+    class="relative hidden lg:flex justify-between items-center content-wrapper py-6 px-4 mt-6 pb-0"
     aria-label="our sponsors"
   >
     <a

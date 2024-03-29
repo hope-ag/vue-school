@@ -93,14 +93,12 @@ const plans: globalThis.PricingItem[] = [
 </script>
 
 <template>
-  <section class="relative mt-16 sm:mt-20 md:mt-28">
-    <SharedWave1Opaque class="absolute top-20 w-full inset-0" />
+  <section class="relative mt-[120px] sm:mt-[140px] lg:mt-[200px]">
+    <SharedWave1Opaque class="absolute top-28 sm:top-48 lg:top-20 w-full inset-0" />
     <SharedWave2Opaque class="absolute top-[440px] left-0 w-full inset-0 -inset-x-6" />
     <div class="content-wrapper relative">
       <div class="container p-4">
-        <h2
-          class="font-bold text-4xl sm:text-5xl md:text-6xl text-center max-w-2xl mx-auto"
-        >
+        <h2 class="h1 text-center max-w-2xl mx-auto">
           Discounted <span class="gradient-text">Corporate</span>
           <span class="gradient-text"> Training</span> Bundles
         </h2>

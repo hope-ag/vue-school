@@ -29,9 +29,7 @@ const icon = computed(() => {
       <component :is="icon" class="group-hover:text-primary duration-200" />
       <span class="text-sm">{{ label }}</span>
     </dt>
-    <dd
-      class="bg-gradient-to-r from-primary to-secondary-light text-transparent bg-clip-text font-medium text-6xl sm:text-7xl md:text-[90px]"
-    >
+    <dd class="gradient-text font-medium text-[64px] sm:text-[90px]">
       {{ value }}
     </dd>
   </div>

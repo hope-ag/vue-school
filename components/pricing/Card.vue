@@ -30,7 +30,9 @@ const icon = computed(() => {
 </script>
 
 <template>
-  <div class="bg-gradient-to-b from-white/20 to-transparent p-px rounded-[30px] h-max">
+  <div
+    class="bg-gradient-to-b from-white/20 to-transparent p-px rounded-[30px] h-max max-w-[640px]"
+  >
     <div class="p-6 sm:py-10 rounded-[30px] bg-surface-light/90">
       <div class="flex items-center gap-4 mb-10">
         <component :is="icon" class="flex-shrink-0" />

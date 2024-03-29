@@ -42,11 +42,6 @@ export default <Partial<Config>>{
   plugins: [
     plugin(function ({ addUtilities, addBase, theme }) {
       addUtilities({
-        '.content-wrapper': {
-          maxWidth: '1170px',
-          marginLeft: 'auto',
-          marginRight: 'auto'
-        },
         '.gradient-text': {
           background: `linear-gradient(90deg, ${theme('colors.primary.DEFAULT')} 0%, ${theme('colors.secondary.light')} 100%)`,
           backgroundClip: 'text',
