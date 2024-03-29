@@ -1,37 +1,37 @@
 export const navbarLinks = [
   {
     name: 'Courses',
-    path: '#',
+    path: '/',
     children: []
   },
   {
     name: 'Plans',
-    path: '#'
+    path: '/'
   },
   {
     name: 'Business Service',
-    path: '#',
+    path: '/',
     children: []
   },
   {
     name: 'Learning Path',
-    path: '#'
+    path: '/'
   },
   {
     name: 'Hiring',
-    path: '#'
+    path: '/'
   },
   {
     name: 'Articles',
-    path: '#'
+    path: '/'
   },
   {
     name: 'Events',
-    path: '#'
+    path: '/'
   },
   {
     name: 'Get Certified',
-    path: '#',
+    path: '/',
     children: []
   }
 ]
