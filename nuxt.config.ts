@@ -7,7 +7,8 @@ export default defineNuxtConfig({
     '@nuxt/image',
     'nuxt-icon',
     '@nuxtjs/google-fonts',
-    '@vueuse/nuxt'
+    '@vueuse/nuxt',
+    '@vueuse/motion/nuxt'
   ],
   tailwindcss: {
     configPath: './tailwind.config.ts'
