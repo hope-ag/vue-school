@@ -21,21 +21,18 @@
             class="lg:space-y-[50px] grid gap-8 grid-cols-1 sm:grid-cols-3 justify-between lg:block"
           >
             <FooterLinkGroup v-bind="footerProductLinks" />
-            <FooterLinkGroup
-              v-bind="isDesktop ? footerPricingLinks : footerCorporateLinks"
-            />
+            <FooterLinkGroup class="hidden lg:block" v-bind="footerPricingLinks" />
+            <FooterLinkGroup class="lg:hidden" v-bind="footerCorporateLinks" />
             <FooterLinkGroup v-bind="footerConnectLinks" />
           </div>
           <div
             class="lg:space-y-[50px] grid gap-8 grid-cols-1 sm:grid-cols-3 justify-between lg:block mt-8 lg:mt-0"
           >
             <FooterLinkGroup v-bind="footerEventLinks" />
-            <FooterLinkGroup
-              v-bind="isDesktop ? footerCorporateLinks : footerResourceLinks"
-            />
-            <FooterLinkGroup
-              v-bind="isDesktop ? footerResourceLinks : footerPricingLinks"
-            />
+            <FooterLinkGroup v-bind="footerCorporateLinks" class="hidden lg:block" />
+            <FooterLinkGroup v-bind="footerResourceLinks" class="lg:hidden" />
+            <FooterLinkGroup v-bind="footerResourceLinks" class="hidden lg:block" />
+            <FooterLinkGroup v-bind="footerPricingLinks" class="lg:hidden" />
           </div>
         </div>
       </div>
