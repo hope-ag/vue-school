@@ -90,7 +90,8 @@ const icon = computed(() => {
           <div class="px-3.5 py-1 bg-[#0E0E10]/20 rounded-lg">
             <div class="flex items-center gap-2">
               <IconsPeople />
-              <span class="font-bold text-2xl text-[#E8E6E6]">{{ selected }}</span> <span class="text-[#979FAD]">seats</span>
+              <span class="font-bold text-2xl text-[#E8E6E6]">{{ selected }}</span>
+              <span class="text-[#979FAD]">seats</span>
             </div>
           </div>
           <p class="text-primary font-medium">26% discount</p>
