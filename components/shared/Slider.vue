@@ -209,7 +209,7 @@ onBeforeUnmount(unbindDragListeners)
   <div
     ref="wrapper"
     :class="[
-      'relative border-0 bg-gray-2 h-1 w-60 rounded-full',
+      'relative border-0 bg-gray-2 h-1 w-60 rounded-full cursor-pointer',
       { 'opacity-60 select-none pointer-events-none cursor-default': disabled }
     ]"
     @click="onBarClick"
@@ -227,7 +227,6 @@ onBeforeUnmount(unbindDragListeners)
       :style="[rangeStyle]"
     />
     <span
-      v-if="!range"
       :class="[
         'absolute block w-3.5 h-3.5 rounded-full border-2 bg-primary border-primary hover:bg-primary hover:border-primary focus:outline-none focus:outline-offset-0 focus:ring ring-primary-light/50 transition duration-200 cursor-grab touch-action-none top-[50%] -translate-y-1/2 ml-[-0.5715rem]'
       ]"
