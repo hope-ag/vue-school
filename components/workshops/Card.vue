@@ -6,10 +6,9 @@ defineProps<{
 </script>
 
 <template>
-  <NuxtLink
-    to="/"
-    aria-details="Workshop details"
-    class="block rounded-[30px] overflow-hidden bg-surface-light w-[calc(100vw-2rem)] max-w-[570px] hover:-translate-y-1 duration-300"
+  <div
+    aria-label="Workshop details"
+    class="relative rounded-[30px] overflow-hidden bg-surface-light w-[calc(100vw-2rem)] max-w-[570px] hover:-translate-y-1 duration-300"
   >
     <div
       class="h-[68px] px-4 sm:px-9 flex items-center gap-3 font-medium bg-gradient-to-r from-tertiary-violet/50 to-tertiary-orange/50 bg-opacity-50"
@@ -41,7 +40,10 @@ defineProps<{
         <span aria-label="speaker name" class="text-gray-2">Steve Popoola</span>
       </div>
     </div>
-  </NuxtLink>
+    <NuxtLink to="/" class="absolute inset-0">
+      <span class="sr-only">View Workshop</span>
+    </NuxtLink>
+  </div>
 </template>
 
 <style scoped></style>

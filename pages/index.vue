@@ -10,7 +10,16 @@ useSeoMeta({
   ogDescription:
     'Basic to advanced Vue.js training from core team members & industry experts. In-depth lessons with weekly updates on Pinia, Typescript, Vue Use, Laravel, & more',
   twitterDescription:
-    'Basic to advanced Vue.js training from core team members & industry experts. In-depth lessons with weekly updates on Pinia, Typescript, Vue Use, Laravel, & more'
+    'Basic to advanced Vue.js training from core team members & industry experts. In-depth lessons with weekly updates on Pinia, Typescript, Vue Use, Laravel, & more',
+  keywords: 'Vue, E-learning, Nuxt, Laravel, Vue School, Nuxt3, Pinia, Vue lessons',
+  robots: 'index, follow',
+  author: 'Hope Agyaba, Vue School'
+})
+
+useHead({
+  htmlAttrs: {
+    lang: 'en'
+  }
 })
 </script>
 

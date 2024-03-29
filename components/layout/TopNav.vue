@@ -4,7 +4,12 @@
   <div class="p-4">
     <nav class="flex items-center justify-between container">
       <div class="flex items-center gap-6">
-        <button class="xl:hidden" name="open mobile navigation">
+        <button
+          class="xl:hidden"
+          aria-label="navigation menu toggle"
+          aria-haspopup="false"
+          aria-disabled="true"
+        >
           <IconsHamburger />
         </button>
         <NuxtImg src="/logo.svg" alt="logo" class="h-14" height="56" width="170" />

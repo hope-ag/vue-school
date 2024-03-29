@@ -47,13 +47,12 @@ const icon = computed(() => {
           :key="feature.name"
           class="flex items-center gap-2 hover:translate-x-0.5 duration-300"
           :class="!feature.enabled ? 'opacity-20' : ''"
-          :aria-details="
-            feature.enabled ? '' : 'This feature is not available for this plan'
-          "
+          :aria-label="feature.name"
+          :aria-disabled="!feature.enabled"
         >
-          <IconsCheck class="text-primary" />
+          <IconsCheck class="text-primary" aria-hidden="true" />
           <span class="text-primary flex-1 text-sm">{{ feature.name }}</span>
-          <IconsInfo class="text-gray-2" />
+          <IconsInfo class="text-gray-2" aria-hidden="true" />
         </li>
       </ul>
 
@@ -87,17 +86,25 @@ const icon = computed(() => {
           </div>
         </div>
         <div
-          aria-details="Number of selected seats and discount"
+          aria-label="Number of selected seats and discount"
           class="flex items-center justify-between"
         >
           <div class="px-3.5 py-1 bg-[#0E0E10]/20 rounded-lg">
-            <div class="flex items-center gap-2">
-              <IconsPeople />
-              <span class="font-bold text-2xl text-[#E8E6E6]">{{ selected }}</span>
+            <p aria-label="seats" class="flex items-center gap-2">
+              <NuxtImg
+                src="/people.svg"
+                height="16"
+                width="19"
+                alt="seats icon"
+                aria-hidden="true"
+              />
+              <span class="font-bold text-2xl text-[#E8E6E6]">
+                {{ selected }}
+              </span>
               <span class="text-[#979FAD]">seats</span>
-            </div>
+            </p>
           </div>
-          <p class="text-primary font-medium">26% discount</p>
+          <p aria-label="discount" class="text-primary font-medium">26% discount</p>
         </div>
       </div>
 

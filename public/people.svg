@@ -1,7 +1,4 @@
-<script setup lang="ts"></script>
-
-<template>
-  <svg
+<svg
     width="19"
     height="17"
     viewBox="0 0 19 17"
@@ -26,6 +23,3 @@
       </linearGradient>
     </defs>
   </svg>
-</template>
-
-<style scoped></style>
