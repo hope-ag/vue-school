@@ -11,26 +11,31 @@ const iconLinkClass =
     <ul class="flex items-center justify-between gap-4 sm:gap-8 md:gap-10">
       <li>
         <NuxtLink :class="iconLinkClass" to="/" class="hover:text-[#3b5998]">
+          <span class="sr-only">Facebook</span>
           <IconsFacebook />
         </NuxtLink>
       </li>
       <li>
         <NuxtLink :class="iconLinkClass" to="/" class="hover:text-sky-500">
+          <span class="sr-only">Twitter</span>
           <IconsTwitter />
         </NuxtLink>
       </li>
       <li>
         <NuxtLink :class="iconLinkClass" to="/" class="hover:text-white">
+          <span class="sr-only">Github</span>
           <IconsGithub />
         </NuxtLink>
       </li>
       <li>
         <NuxtLink :class="iconLinkClass" to="/" class="hover:text-[#0e76a8]">
+          <span class="sr-only">LinkedIn</span>
           <IconsLinkedIn />
         </NuxtLink>
       </li>
       <li>
         <NuxtLink :class="iconLinkClass" to="/" class="hover:text-[#b2071d]">
+          <span class="sr-only">YouTube</span>
           <IconsYouTube />
         </NuxtLink>
       </li>

@@ -21,5 +21,8 @@ export default defineNuxtConfig({
       Inter: [300, 400, 500, 600, 700, 800, 900]
     }
   },
-  css: ['~/assets/main.css']
+  css: ['~/assets/main.css'],
+  nitro: {
+    preset: 'cloudflare-pages'
+  }
 })

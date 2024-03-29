@@ -7,7 +7,7 @@
         <button class="xl:hidden" name="open mobile navigation">
           <IconsHamburger />
         </button>
-        <NuxtImg src="/logo.svg" alt="logo" class="h-14" />
+        <NuxtImg src="/logo.svg" alt="logo" class="h-14" height="56" width="170" />
       </div>
       <ul class="hidden xl:flex gap-5">
         <li v-for="link in navbarLinks" :key="link.name">

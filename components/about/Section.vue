@@ -13,6 +13,8 @@
             src="/logo-icon-only.svg"
             alt="logo"
             class="w-16 sm:w-28 lg:w-40 flex-shrink-0 lg:p-5"
+            width="135"
+            height="152.59"
           />
           <div class="text space-y-4 md:space-y-6 text-center sm:text-left">
             <h2 class="text-white font-bold text-2xl sm:text-4xl">

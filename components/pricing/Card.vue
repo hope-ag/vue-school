@@ -78,6 +78,7 @@ const icon = computed(() => {
             v-model="selected"
             :min="5"
             :max="20"
+            aria-label="Number of licenses"
             class="w-full"
           />
           <div aria-hidden="true" class="flex justify-between mt-4 text-sm text-gray-2">

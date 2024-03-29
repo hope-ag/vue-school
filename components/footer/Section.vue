@@ -7,7 +7,13 @@
         <div
           class="flex flex-col items-center lg:items-start gap-8 sm:gap-10 lg:gap-[85px] lg:max-w-[470px]"
         >
-          <NuxtImg src="/logo.svg" alt="Vue school logo" class="h-[88px]" />
+          <NuxtImg
+            src="/logo.svg"
+            alt="Vue school logo"
+            class="h-[88px]"
+            height="88"
+            width="268"
+          />
           <p class="text-white text-center lg:text-left">
             Thanks to fine people like you, Vue School can proudly sponsor Evan and the
             future of Vue.js by being a Platinum Patreon
