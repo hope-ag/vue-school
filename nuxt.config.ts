@@ -22,6 +22,12 @@ export default defineNuxtConfig({
     }
   },
   css: ['~/assets/main.css'],
+  runtimeConfig: {
+    baseUrl: '',
+    public: {
+      baseUrl: ''
+    }
+  },
   nitro: {
     preset: 'cloudflare-pages'
   }
