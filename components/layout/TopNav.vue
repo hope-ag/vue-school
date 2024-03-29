@@ -18,9 +18,9 @@
         </li>
       </ul>
       <div class="hidden sm:flex gap-5 items-center">
-        <NuxtLink to="#" class="hover:text-primary duration-200">Log in</NuxtLink>
+        <NuxtLink to="/" class="hover:text-primary duration-200">Log in</NuxtLink>
         <NuxtLink
-          to="#"
+          to="/"
           class="inline-block relative bg-gradient-to-r from-primary-light to-secondary p-0.5 rounded-lg"
         >
           <span

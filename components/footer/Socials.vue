@@ -1,6 +1,6 @@
 <script setup lang="ts">
 const iconLinkClass =
-  'grid place-content-center bg-surface-light h-[60px] w-[60px] rounded-full text-gray-1 duration-300'
+  'grid place-content-center bg-surface-light h-[60px] w-[60px] rounded-full text-gray-1 hover:bg-gray/[0.08] duration-300'
 </script>
 
 <template>
@@ -10,27 +10,27 @@ const iconLinkClass =
     </h2>
     <ul class="flex items-center justify-between gap-4 sm:gap-8 md:gap-10">
       <li>
-        <NuxtLink :class="iconLinkClass" class="hover:text-[#3b5998]">
+        <NuxtLink :class="iconLinkClass" to="/" class="hover:text-[#3b5998]">
           <IconsFacebook />
         </NuxtLink>
       </li>
       <li>
-        <NuxtLink :class="iconLinkClass" class="hover:text-sky-500">
+        <NuxtLink :class="iconLinkClass" to="/" class="hover:text-sky-500">
           <IconsTwitter />
         </NuxtLink>
       </li>
       <li>
-        <NuxtLink :class="iconLinkClass" class="hover:text-white">
+        <NuxtLink :class="iconLinkClass" to="/" class="hover:text-white">
           <IconsGithub />
         </NuxtLink>
       </li>
       <li>
-        <NuxtLink :class="iconLinkClass" class="hover:text-[#0e76a8]">
+        <NuxtLink :class="iconLinkClass" to="/" class="hover:text-[#0e76a8]">
           <IconsLinkedIn />
         </NuxtLink>
       </li>
       <li>
-        <NuxtLink :class="iconLinkClass" class="hover:text-[#b2071d]">
+        <NuxtLink :class="iconLinkClass" to="/" class="hover:text-[#b2071d]">
           <IconsYouTube />
         </NuxtLink>
       </li>

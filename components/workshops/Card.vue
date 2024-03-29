@@ -9,10 +9,10 @@ defineProps<{
   <NuxtLink
     to="/"
     aria-details="Workshop details"
-    class="block rounded-[30px] overflow-hidden bg-surface-light w-[calc(100vw-2rem)] max-w-[570px]"
+    class="block rounded-[30px] overflow-hidden bg-surface-light w-[calc(100vw-2rem)] max-w-[570px] hover:-translate-y-1 duration-300"
   >
     <div
-      class="h-[68px] px-4 sm:px-9 flex items-center gap-3 font-medium bg-gradient-to-r from-tertiary-violet/50 to-tertiary-orange/50"
+      class="h-[68px] px-4 sm:px-9 flex items-center gap-3 font-medium bg-gradient-to-r from-tertiary-violet/50 to-tertiary-orange/50 bg-opacity-50"
       aria-label="workshop date"
     >
       <IconsCalendar aria-hidden="true" />
@@ -37,7 +37,7 @@ defineProps<{
       </p>
 
       <div aria-label="speaker details" class="flex text-sm gap-3 items-center">
-        <NuxtImg src="/speaker.png" class="h-6 w-6" />
+        <NuxtImg src="/speaker.png" alt="speaker image" class="h-6 w-6" />
         <span aria-label="speaker name" class="text-gray-2">Steve Popoola</span>
       </div>
     </div>

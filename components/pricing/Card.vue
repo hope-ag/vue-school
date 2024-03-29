@@ -31,7 +31,7 @@ const icon = computed(() => {
 
 <template>
   <div
-    class="bg-gradient-to-b from-white/20 to-transparent p-px rounded-[30px] h-max max-w-[640px]"
+    class="bg-gradient-to-b from-white/20 hover:from-white/40 duration-300 to-transparent p-px rounded-[30px] h-max max-w-[640px] hover:-translate-y-1"
   >
     <div class="p-6 sm:py-10 rounded-[30px] bg-surface-light/90">
       <div class="flex items-center gap-4 mb-10">

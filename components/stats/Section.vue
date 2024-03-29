@@ -21,7 +21,7 @@ const stats = [
 <template>
   <section class="content-wrapper mt-[120px] sm:mt-[140px] md:mt-[180px]">
     <div
-      class="container p-4 grid grid-cols-1 lg:grid-cols-2 items-center justify-between gap-8 lg:gap-14"
+      class="grid grid-cols-1 lg:grid-cols-2 items-center justify-between gap-8 lg:gap-14"
     >
       <div class="text text-center lg:text-left">
         <h2 class="font-medium text-base sm:text-lg md:text-2xl gradient-text mb-3">

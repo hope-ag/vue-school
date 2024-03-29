@@ -4,7 +4,7 @@
   <section class="relative -mt-16">
     <SharedWave1 class="absolute top-0 left-0 w-full inset-y-0 -inset-x-6" />
     <SharedWave2 class="absolute top-0 left-0 w-full inset-0 -inset-x-6" />
-    <div class="content-wrapper p-4 pt-32 relative">
+    <div class="content-wrapper pt-32 relative">
       <div class="bg-gradient-to-b from-white/20 to-transparent p-px rounded-[30px]">
         <div
           class="p-6 sm:py-10 md:px-10 md:py-10 flex flex-col sm:flex-row items-center sm:items-start xl:items-center gap-6 md:gap-10 rounded-[30px] bg-surface-light/90"

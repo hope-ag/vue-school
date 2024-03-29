@@ -3,7 +3,7 @@
 <template>
   <footer class="mt-24 sm:mt-40 lg:mt-52 pb-12 sm:pb-20">
     <div class="content-wrapper">
-      <div class="grid lg:justify-between lg:grid-cols-2 lg:gap-16 container p-4">
+      <div class="grid lg:justify-between lg:grid-cols-2 lg:gap-16">
         <div
           class="flex flex-col items-center lg:items-start gap-8 sm:gap-10 lg:gap-[85px] lg:max-w-[470px]"
         >

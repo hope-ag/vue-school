@@ -5,7 +5,7 @@ useSeoMeta({
 </script>
 
 <template>
-  <main>
+  <main class="overflow-x-hidden">
     <HeroSection />
     <AboutSection />
     <StatsSection />
