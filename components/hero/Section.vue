@@ -20,11 +20,9 @@
 
           <SharedAppButton label="Get started" class="" />
         </div>
-        <ClientOnly>
-          <HeroImage
-            class="w-[90%] sm:w-full max-w-[450px] sm:block mx-auto md:max-w-none md:mx-0 flex-shrink-0"
-          />
-        </ClientOnly>
+        <HeroImage
+          class="w-[90%] sm:w-full max-w-[450px] sm:block mx-auto md:max-w-none md:mx-0 flex-shrink-0"
+        />
       </div>
     </section>
   </header>

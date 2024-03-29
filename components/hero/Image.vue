@@ -7,10 +7,17 @@
     viewBox="0 0 603 617"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
+    class="group"
   >
     <g id="Group 854">
       <!-- Top person -->
-      <g id="Group">
+      <g
+        id="Group"
+        v-motion
+        :initial="{ opacity: 0, y: -80, x: 70 }"
+        :enter="{ opacity: 1, y: 0, x: 0, transition: { duration: 500, delay: 500 } }"
+        class="opacity-0"
+      >
         <g id="Group_2">
           <path
             id="Vector"
@@ -265,7 +272,13 @@
       </g>
 
       <!-- Right Person -->
-      <g id="Group_14">
+      <g
+        id="Group_14"
+        v-motion
+        :initial="{ opacity: 0, y: -80, x: -70 }"
+        :enter="{ opacity: 1, y: 0, x: 0, transition: { duration: 500 } }"
+        class="opacity-0 group-hover:!translate-x-2 duration-500"
+      >
         <g id="Group_15">
           <g id="Group_16">
             <path
@@ -489,7 +502,13 @@
       </g>
 
       <!-- Vite -->
-      <g id="Group_28">
+      <g
+        id="Group_28"
+        v-motion
+        :initial="{ opacity: 0, y: -80 }"
+        :enter="{ opacity: 1, y: 0, transition: { duration: 300, delay: 1200 } }"
+        class="opacity-0 group-hover:!translate-y-4 duration-500"
+      >
         <path
           id="Vector_75"
           d="M459.176 107.681L445.856 147.53C445.582 148.349 444.52 148.552 443.964 147.884L416.869 115.499C416.262 114.771 416.768 113.668 417.708 113.658L438.412 113.567C438.543 113.567 438.675 113.547 438.796 113.496L457.739 106.255C458.609 105.921 459.479 106.771 459.186 107.661L459.176 107.681Z"
@@ -503,7 +522,13 @@
       </g>
 
       <!-- Pinia -->
-      <g id="Group_29">
+      <g
+        id="Group_29"
+        v-motion
+        :initial="{ opacity: 0, y: -80 }"
+        :enter="{ opacity: 1, y: 0, transition: { duration: 300, delay: 1400 } }"
+        class="opacity-0 group-hover:!translate-y-4 duration-500 group-hover:delay-200"
+      >
         <path
           id="Vector_77"
           d="M530.51 146.174C537.115 142.927 537.377 136.465 534.94 127.787C532.503 119.109 523.936 113.647 521.691 114.75C519.445 115.852 515.471 127.483 517.908 136.161C520.346 144.839 523.906 149.421 530.51 146.164V146.174Z"
@@ -790,9 +815,9 @@
         <g
           id="Group_35"
           v-motion
-          :initial="{ opacity: 0, y: 100 }"
-          :enter="{ opacity: 1, y: 0 }"
-          class="opacity-0"
+          :initial="{ opacity: 0, y: 80, x: 70 }"
+          :enter="{ opacity: 1, y: 0, x: 0, transition: { duration: 500, delay: 300 } }"
+          class="opacity-0 group-hover:!-translate-x-2 group-hover:!-translate-y-2 duration-500"
         >
           <path
             id="Vector_133"
