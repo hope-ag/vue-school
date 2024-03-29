@@ -11,5 +11,6 @@ useSeoMeta({
     <StatsSection />
     <PricingSection />
     <WorkshopsSection />
+    <FooterSection />
   </main>
 </template>
