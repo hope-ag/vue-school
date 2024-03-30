@@ -1,21 +1,7 @@
 <script setup lang="ts">
-const stats = [
-  {
-    type: 'videos',
-    label: 'Video Lessons',
-    value: 763
-  },
-  {
-    type: 'courses',
-    label: 'Courses',
-    value: 40
-  },
-  {
-    type: 'hours',
-    label: 'Hours of content',
-    value: 64
-  }
-] as const
+defineProps<{
+  stats?: globalThis.Stats[] | null
+}>()
 </script>
 
 <template>
@@ -37,8 +23,13 @@ const stats = [
         </h3>
       </div>
 
-      <dl class="stats flex gap-6 sm:gap-[61px] justify-between lg:justify-end">
-        <StatsSingleItem v-for="stat in stats" :key="stat.type" v-bind="stat" />
+      <p v-if="!stats || !stats.length" class="text-red-500">
+        There was an error getting data
+      </p>
+      <dl v-else class="stats flex gap-6 sm:gap-[61px] justify-between lg:justify-end">
+        <StatsSingleItem :value="stats[0].lessons" type="lessons" label="Video Lessons" />
+        <StatsSingleItem :value="stats[0].courses" type="courses" label="Courses" />
+        <StatsSingleItem :value="stats[0].hours" type="hours" label="Hours of content" />
       </dl>
     </div>
   </section>

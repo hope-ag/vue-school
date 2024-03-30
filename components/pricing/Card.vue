@@ -16,7 +16,7 @@ const props = defineProps<{
 const selected = ref(12)
 
 const icon = computed(() => {
-  switch (props.plan.id) {
+  switch (props.plan.key) {
     case 'basic':
       return BasicPlanIcon
     case 'professional':
@@ -51,7 +51,11 @@ const icon = computed(() => {
           :aria-disabled="!feature.enabled"
         >
           <IconsCheck class="text-primary" aria-hidden="true" />
-          <span class="text-primary flex-1 text-sm">{{ feature.name }}</span>
+          <span
+            class="text-primary flex-1 text-sm"
+            :class="feature.emphasized ? 'font-bold' : ''"
+            >{{ feature.name }}</span
+          >
           <IconsInfo class="text-gray-2" aria-hidden="true" />
         </li>
       </ul>

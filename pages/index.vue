@@ -21,14 +21,30 @@ useHead({
     lang: 'en'
   }
 })
+
+const query = groq`{
+  "heroContent": *[_type == "heroContent"],
+  "pricingPlan": *[_type == "pricingPlan"],
+  "stats": *[_type == "stats"]
+}`
+
+const sanity = useSanity()
+
+const { data } = await useAsyncData('articles', () =>
+  sanity.fetch<{ 
+    heroContent: globalThis.HeroContent[],
+    pricingPlan: globalThis.PricingItem[],
+    stats: globalThis.Stats[]
+  }>(query)
+)
 </script>
 
 <template>
   <main class="overflow-x-hidden">
-    <HeroSection />
+    <HeroSection :hero-content="data?.heroContent" />
     <AboutSection />
-    <StatsSection />
-    <PricingSection />
+    <StatsSection :stats="data?.stats" />
+    <PricingSection :plans="data?.pricingPlan" />
     <WorkshopsSection />
     <FooterSection />
   </main>

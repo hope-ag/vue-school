@@ -11,6 +11,7 @@
     "lint:fix": "eslint --ext .js,.ts,.vue . --fix"
   },
   "dependencies": {
+    "@nuxtjs/sanity": "^1.10.1",
     "nuxt": "^3.11.1",
     "vue": "^3.4.21",
     "vue-router": "^4.3.0"
