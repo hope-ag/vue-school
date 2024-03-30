@@ -31,9 +31,9 @@ const query = groq`{
 const sanity = useSanity()
 
 const { data } = await useAsyncData('articles', () =>
-  sanity.fetch<{ 
-    heroContent: globalThis.HeroContent[],
-    pricingPlan: globalThis.PricingItem[],
+  sanity.fetch<{
+    heroContent: globalThis.HeroContent[]
+    pricingPlan: globalThis.PricingItem[]
     stats: globalThis.Stats[]
   }>(query)
 )
