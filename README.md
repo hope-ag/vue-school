@@ -128,6 +128,10 @@ At this point, you should be all set and ready to run the project.
  yarn dev
  ```
 
+ <br>
+ <br>
+ <br>
+
 ## Updating content with sanity studio
 
-A full recording of the guide can be found [here](https://pub-3e807a11392046e08f3614e5f9dabe9d.r2.dev/vs-guide.mp4). In the video, the http://localhost:3000 was not added to the allowed origins, remember to add it (check step 2)
+A full recording of the guide can be found [here](https://pub-3e807a11392046e08f3614e5f9dabe9d.r2.dev/vs-guide.mp4). In the video, http://localhost:3000 was not added to the allowed origins, remember to add it (check step 2) to prevent errors.
