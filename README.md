@@ -43,7 +43,7 @@
 
 ### Steps
 
-1.  Sign into your [sanity.io](https://www.sanity.io/) account and created a project if you don't already have one. Copy the projectId up top and under datasets, copy the mane of the dataset you want to use. For this test, I'm using "production". 
+1.  Sign into your [sanity.io](https://www.sanity.io/) account and created a project if you don't already have one. Copy the project Id up top. Switch to the Datasets tab and copy the mane of the dataset you want to use. For this test, I'm using "production".
 <p align='center'>
   <img src='docs/sanity.png' alt='Vitesse - Opinionated Vite Starter Template' width='600'/>
 </p>
