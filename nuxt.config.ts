@@ -7,7 +7,8 @@ export default defineNuxtConfig({
     '@nuxt/image',
     'nuxt-icon',
     '@nuxtjs/google-fonts',
-    '@vueuse/nuxt'
+    '@vueuse/nuxt',
+    '@nuxtjs/sanity'
   ],
   tailwindcss: {
     configPath: './tailwind.config.ts'
@@ -26,6 +27,10 @@ export default defineNuxtConfig({
     public: {
       baseUrl: ''
     }
+  },
+  sanity: {
+    projectId: process.env.NUXT_SANITY_PROJECT_ID,
+    dataset: process.env.NUXT_SANITY_DATASET
   },
   nitro: {
     preset: 'cloudflare-pages'

@@ -16,7 +16,7 @@ const props = defineProps<{
 const selected = ref(12)
 
 const icon = computed(() => {
-  switch (props.plan.id) {
+  switch (props.plan.key) {
     case 'basic':
       return BasicPlanIcon
     case 'professional':
@@ -27,6 +27,12 @@ const icon = computed(() => {
       return 'div'
   }
 })
+
+const featuredCourse = {
+  title: 'Enough time to watch:',
+  description: 'The Vue 3 Masterclass',
+  image: '/featured-course.png'
+}
 </script>
 
 <template>
@@ -51,14 +57,18 @@ const icon = computed(() => {
           :aria-disabled="!feature.enabled"
         >
           <IconsCheck class="text-primary" aria-hidden="true" />
-          <span class="text-primary flex-1 text-sm">{{ feature.name }}</span>
+          <span
+            class="text-primary flex-1 text-sm"
+            :class="feature.emphasized ? 'font-bold' : ''"
+            >{{ feature.name }}</span
+          >
           <IconsInfo class="text-gray-2" aria-hidden="true" />
         </li>
       </ul>
 
       <PricingFeaturedCourse
-        v-if="plan.featuredCourse"
-        :course="plan.featuredCourse"
+        v-if="plan.key === 'professional'"
+        :course="featuredCourse"
         class="mb-6"
       />
 

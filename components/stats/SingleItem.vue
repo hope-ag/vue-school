@@ -4,14 +4,14 @@ const ClockIcon = defineAsyncComponent(() => import('@/components/icons/Clock.vu
 const BookIcon = defineAsyncComponent(() => import('@/components/icons/Book.vue'))
 
 const props = defineProps<{
-  type: 'videos' | 'courses' | 'hours'
+  type: keyof globalThis.Stats
   label: string
   value: number
 }>()
 
 const icon = computed(() => {
   switch (props.type) {
-    case 'videos':
+    case 'lessons':
       return VideoIcon
     case 'courses':
       return BookIcon
