@@ -27,6 +27,12 @@ const icon = computed(() => {
       return 'div'
   }
 })
+
+const featuredCourse = {
+  title: 'Enough time to watch:',
+  description: 'The Vue 3 Masterclass',
+  image: '/featured-course.png'
+}
 </script>
 
 <template>
@@ -61,8 +67,8 @@ const icon = computed(() => {
       </ul>
 
       <PricingFeaturedCourse
-        v-if="plan.featuredCourse"
-        :course="plan.featuredCourse"
+        v-if="plan.key === 'professional'"
+        :course="featuredCourse"
         class="mb-6"
       />
 

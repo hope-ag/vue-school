@@ -1,6 +1,6 @@
 <script setup lang="ts">
 defineProps<{
-  stats?: globalThis.Stats[] | null
+  stats?: globalThis.Stats | null
 }>()
 </script>
 
@@ -23,13 +23,11 @@ defineProps<{
         </h3>
       </div>
 
-      <p v-if="!stats || !stats.length" class="text-red-500">
-        There was an error getting data
-      </p>
+      <p v-if="!stats" class="text-red-500">There was an error getting data</p>
       <dl v-else class="stats flex gap-6 sm:gap-[61px] justify-between lg:justify-end">
-        <StatsSingleItem :value="stats[0].lessons" type="lessons" label="Video Lessons" />
-        <StatsSingleItem :value="stats[0].courses" type="courses" label="Courses" />
-        <StatsSingleItem :value="stats[0].hours" type="hours" label="Hours of content" />
+        <StatsSingleItem :value="stats.lessons" type="lessons" label="Video Lessons" />
+        <StatsSingleItem :value="stats.courses" type="courses" label="Courses" />
+        <StatsSingleItem :value="stats.hours" type="hours" label="Hours of content" />
       </dl>
     </div>
   </section>

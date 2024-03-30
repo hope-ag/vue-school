@@ -23,19 +23,21 @@ useHead({
 })
 
 const query = groq`{
-  "heroContent": *[_type == "heroContent"],
+  "heroContent": *[_type == "heroContent"][0],
   "pricingPlan": *[_type == "pricingPlan"],
-  "stats": *[_type == "stats"]
+  "stats": *[_type == "stats"][0]
 }`
 
 const sanity = useSanity()
 
-const { data } = await useAsyncData('articles', () =>
-  sanity.fetch<{
-    heroContent: globalThis.HeroContent[]
-    pricingPlan: globalThis.PricingItem[]
-    stats: globalThis.Stats[]
-  }>(query)
+const { data } = await useAsyncData(
+  'articles',
+  async () =>
+    await sanity.fetch<{
+      heroContent: globalThis.HeroContent
+      pricingPlan: globalThis.PricingItem[]
+      stats: globalThis.Stats
+    }>(query)
 )
 </script>
 
