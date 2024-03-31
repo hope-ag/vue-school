@@ -9,7 +9,7 @@ defineProps<{
     <div
       class="grid grid-cols-1 lg:grid-cols-2 items-center justify-between gap-8 lg:gap-14"
     >
-      <div class="text text-center lg:text-left">
+      <div class="text text-center lg:text-left max-w-xl mx-auto lg:mx-0">
         <h2 class="font-medium text-base sm:text-lg md:text-2xl gradient-text mb-3">
           YOUR #1 SOURCE OF VUE.JS COURSES
         </h2>
