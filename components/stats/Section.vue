@@ -24,10 +24,10 @@ defineProps<{
       </div>
 
       <p v-if="!stats" class="text-red-500">There was an error getting data</p>
-      <dl v-else class="stats flex gap-6 sm:gap-[61px] justify-between lg:justify-end">
+      <dl v-else class="stats flex gap-6 sm:gap-[61px] justify-center lg:justify-end">
         <StatsSingleItem :value="stats.lessons" type="lessons" label="Video Lessons" />
         <StatsSingleItem :value="stats.courses" type="courses" label="Courses" />
-        <StatsSingleItem :value="stats.hours" type="hours" label="Hours of content" />
+        <StatsSingleItem :value="stats.hours" type="hours" label="15 Hours" />
       </dl>
     </div>
   </section>
