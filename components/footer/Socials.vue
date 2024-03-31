@@ -6,7 +6,7 @@ const iconLinkClass =
 <template>
   <div aria-label="social links" class="text-center lg:text-left">
     <h2 class="mb-5 uppercase text-gray-2 font-medium text-[22px]">
-      FOLLOW US IN SOCIAL MEDIA
+      FOLLOW US ON SOCIAL MEDIA
     </h2>
     <ul class="flex items-center justify-between gap-4 sm:gap-8 md:gap-10">
       <li>
