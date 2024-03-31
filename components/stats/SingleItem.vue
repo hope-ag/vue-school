@@ -27,7 +27,7 @@ const icon = computed(() => {
   <div class="flex flex-col-reverse items-center group">
     <dt class="flex items-center gap-2">
       <component :is="icon" class="group-hover:text-primary duration-200" />
-      <span class="text-sm whitespace-nowrap">{{ label }}</span>
+      <span class="text-sm sm:whitespace-nowrap">{{ label }}</span>
     </dt>
     <dd class="gradient-text font-medium text-[64px] sm:text-[90px]">
       {{ value }}

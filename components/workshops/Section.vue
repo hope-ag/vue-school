@@ -20,7 +20,7 @@ const workshope = [
 
 <template>
   <section class="mt-40">
-    <div class="content-wrapper mb-16">
+    <div class="content-wrapper mb-[56px]">
       <div class="container p-4 flex flex-col">
         <div class="flex justify-center lg:justify-between items-center">
           <h2 class="text-white font-bold h1 text-center lg:text-left">
@@ -33,8 +33,8 @@ const workshope = [
 
     <div class="relative group">
       <div class="overflow-x-scroll scroll">
-        <div class="content-wrapper">
-          <div class="container p-4">
+        <div class="content-wrapper pb-2">
+          <div class="container py-4">
             <div class="workshop-cards flex w-max gap-4 sm:gap-6 pr-4 sm:pr-6">
               <WorkshopsCard
                 v-for="workshop in workshope"
@@ -47,7 +47,7 @@ const workshope = [
       </div>
     </div>
 
-    <div class="flex items-center justify-center lg:hidden mt-10 sm:mt-14">
+    <div class="flex items-center justify-center lg:hidden mt-8 sm:mt-14">
       <SharedAppButton label="See all the workshops" />
     </div>
   </section>

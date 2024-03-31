@@ -5,7 +5,7 @@
     viewBox="0 0 1440 611"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
-    preserve-aspect-ratio="none"
+    preserveAspectRatio="none"
   >
     <path
       d="M0 103.808C106.412 49.9249 264.341 -9.09161 451.767 2.21273C598.775 11.0803 674.487 57.7739 805.884 90.2511C948.761 125.57 1158.25 144.599 1440 61.8079V610.808H0V103.808Z"
